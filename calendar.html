@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashlead - Admin Panel</title>
+    
+    <link rel="icon" href="assets/images/favicon.png">
+    <!-- offline font -->
+    <link rel="stylesheet" href="assets/roboto/stylesheet.css">
+    <!-- free line fonts -->
+    <link rel="stylesheet" href="assets/line-awesome-1.3.0/1.3.0/css/line-awesome.min.css">
+    <!-- boostrap icon -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- boostrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <section class="pages" id="top"></section>
+    <!-- header start -->
+    <div class="header position-fixed top-0 w-100">
+        <div class=" d-flex">
+            <div class="menu-logo  text-center ">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="logo" class=" img-fluid d-block">
+                </a>
+            </div>
+            <div class="menu-logo-2  text-center  ">
+                <a href="index.html">
+                    <img src="assets/images/favicon.png" alt="logo" class=" img-fluid d-block ">
+                </a>
+            </div>
+            <div class="header-right d-flex align-items-center justify-content-between">
+                <div class="toggle-button">
+                    <div class="menu-button p-4">
+                        <a href="#" class="menu-bar">
+                            <span class="position-relative d-block">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="menu-center-logo ">
+                    <img src="assets/images/logo.png" alt="logo" class="d-lg-none img-fluid">
+                </div>
+                <div class="d-flex align-items-center">
+                    <ul class="menu-icon d-flex align-items-center d-none d-lg-flex">
+                        <li class="dropdown">
+                            <button class="btn dropdown-toggle fs-5 position-relative" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-globe"></i>
+                            </button>
+                            <ul class="dropdown-menu globe">
+                                <li><a class="dropdown-item" href="#">
+                                        <img src="assets/images/french_flag.jpg" alt="flag" class="col-2 me-2">
+                                        <span>French</span>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <img src="assets/images/germany_flag.jpg" alt="flag" class="col-2 me-2">
+                                        <span>Germany</span>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <img src="assets/images/italy_flag.jpg" alt="flag" class="col-2 me-2">
+                                        <span>Italy</span>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <img src="assets/images/russia_flag.jpg" alt="flag" class="col-2 me-2">
+                                        <span>Russia</span>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <img src="assets/images/spain_flag.jpg" alt="flag" class="col-2 me-2">
+                                        <span>Spain</span>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown fs-5">
+                            <i class="bi bi-moon"></i>
+                        </li>
+                        <li class="dropdown">
+                            <button class="btn dropdown-toggle fs-5" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <ul class="dropdown-menu srch">
+                                <li><a class="search dropdown-item  position-relative p-2" href="#">
+                                        <input class="form-control" placeholder="Search" type="search">
+                                        <button class="btn position-absolute fs-6 "><i
+                                                class="bi bi-search"></i></button>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown cart">
+                            <button class="btn dropdown-toggle fs-5" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-cart-plus"></i>
+                                <span
+                                    class="position-absolute start-100 translate-middle badge rounded-circle bg-danger">
+                                    4
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu cart-menu">
+                                <li class="py-3 px-1 d-flex align-items-center justify-content-between my-cart">
+                                    <h6 class="m-0">My Cart(4)</h6>
+                                    <div class="button px-2 py-1 text-white"
+                                        style="background-color: var(--primary-btn-color);">
+                                        View all
+                                    </div>
+                                </li>
+                                <div class="out-side">
+                                    <li>
+                                        <a href="" class="dropdown-item border-bottom border-top py-2">
+                                            <div class="d-flex align-items-center">
+                                                <div class="cart-img">
+                                                    <img src="assets/images/1.png" alt="">
+                                                </div>
+                                                <div class="ms-3">
+                                                    <h6 class="m-0 fs-7 text-color">Soft Teddy Bear</h6>
+                                                    <div class="inline fs-7 text-grey">$1549.00</div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <i class="bi bi-trash3-fill text-danger"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dropdown-item border-bottom py-2">
+                                            <div class="d-flex align-items-center">
+                                                <div class="cart-img">
+                                                    <img src="assets/images/2.png" alt="">
+                                                </div>
+                                                <div class="ms-3">
+                                                    <h6 class="m-0 fs-7 text-color">Flowers Vase</h6>
+                                                    <div class="inline fs-7 text-grey">$999.00</div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <i class="bi bi-trash3-fill text-danger"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dropdown-item border-bottom  py-2">
+                                            <div class="d-flex align-items-center">
+                                                <div class="cart-img">
+                                                    <img src="assets/images/3.png" alt="">
+                                                </div>
+                                                <div class="ms-3">
+                                                    <h6 class="m-0 fs-7 text-color">Wall Clock</h6>
+                                                    <div class="inline fs-7 text-grey">$1599.00</div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <i class="bi bi-trash3-fill text-danger"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dropdown-item border-bottom py-2">
+                                            <div class="d-flex align-items-center">
+                                                <div class="cart-img">
+                                                    <img src="assets/images/4.png" alt="">
+                                                </div>
+                                                <div class="ms-3">
+                                                    <h6 class="m-0 fs-7 text-color">Luxurious Hand Bag</h6>
+                                                    <div class="inline fs-7 text-grey">$3599.00</div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <i class="bi bi-trash3-fill text-danger"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dropdown-item border-bottom py-2">
+                                            <div class="d-flex align-items-center">
+                                                <div class="cart-img">
+                                                    <img src="assets/images/5.png" alt="">
+                                                </div>
+                                                <div class="ms-3">
+                                                    <h6 class="m-0 fs-7 text-color">Black DSLR Camera</h6>
+                                                    <div class="inline fs-7 text-grey">$50,999.00</div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <i class="bi bi-trash3-fill text-danger"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="pt-3 pb-2">
+                                    <div class="d-flex ">
+                                        <p class="fx-18 text-color m-0 fw-bolder ps-3"> Total :$18,046</p>
+                                        <button type="submit" class="btn-sm text-white border-0 ms-auto px-2 py-1"
+                                            style="background-color: #01b8ff;"><i
+                                                class="bi bi-check2-circle me-1 text-white"></i>Checkout</button>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown full-screen">
+                            <button class="btn dropdown-toggle fs-5" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="full">
+                                <i class="bi bi-fullscreen"></i>
+                            </button>
+                        </li>
+                        <li class="dropdown bell">
+                            <button class="btn dropdown-toggle fs-5" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-bell"></i>
+                                <span
+                                    class="position-absolute translate-middle p-2 bg-danger border border-light rounded-circle">
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item  position-relative " href="#">
+                                        <input class="form-control" placeholder="Search" type="search">
+                                        <button class="btn position-absolute fs-6 "><i
+                                                class="bi bi-search"></i></button>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown user">
+                            <button class="btn dropdown-toggle fs-5 " type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="assets/images/user.jpg" alt="user" class="img-fluid rounded-circle">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item  position-relative " href="#">
+                                        <input class="form-control" placeholder="Search" type="search">
+                                        <button class="btn position-absolute fs-6 "><i
+                                                class="bi bi-search"></i></button>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown right-menu">
+                            <a class="btn fs-5" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                aria-controls="offcanvasExample">
+                                <i class="las la-bars"></i>
+                            </a>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                                aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div>
+                                        Some text as placeholder. In real life you can have the elements you
+                                        have
+                                        chosen. Like, text, images, lists, etc.
+                                    </div>
+                                    <div class="dropdown mt-3">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown">
+                                            Dropdown button
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="menu-right d-flex align-items-center">
+                        <li class="dropdown dots d-flex d-lg-none">
+                            <button class="btn dropdown-toggle fs-5" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item  position-relative " href="#">
+                                        <input class="form-control" placeholder="Search" type="search">
+                                        <button class="btn position-absolute fs-6 "><i
+                                                class="bi bi-search"></i></button>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown setting ">
+                            <a class="btn fs-5 spin" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                aria-controls="offcanvasExample">
+                                <i class="bi bi-gear"></i>
+                            </a>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                                aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div>
+                                        Some text as placeholder. In real life you can have the elements you
+                                        have
+                                        chosen. Like, text, images, lists, etc.
+                                    </div>
+                                    <div class="dropdown mt-3">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown">
+                                            Dropdown button
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- aside start -->
+    <aside class="app-menu h-100 merge-in">
+        <div class="scroll-bar">
+            <!-- dashboard start -->
+            <div class="dashboard-title ps-0 p-3">
+                <p class="fs-11 ms-3 collaps aside-title-color">DASHBOARD</p>
+                <div class="dashboard hover ms-4 d-flex align-items-center" style="color: #8760fb !important;">
+                    <i class="las la-tv me-3 fs-18"></i>
+                    <div class="collaps">
+                        <a href="index.html" style="color: #8760fb !important;"> Dashboard </a>
+                    </div>
+                </div>
+            </div>
+            <!-- dashboard end -->
+            <!-- application start  -->
+            <div class="application-title ps-0 pb-3">
+                <p class="fs-11  ms-3 collaps aside-title-color">APPLICATIONS</p>
+                <div class=" ms-4 hover d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+                    data-bs-target="#apps-open" aria-expanded="false">
+                    <div class="app  d-flex align-items-center">
+                        <i class="las la-cube me-3 fs-18"></i>
+                        <div class="collaps">
+                            <a href="#" class="text-color">Apps</a>
+                        </div>
+                    </div>
+                    <div class="me-3">
+                        <i class="las la-angle-right fs-11"></i>
+                    </div>
+                </div>
+                <ul class="mt-2 apps-cl collapse t" id="apps-open">
+                    <li class="py-2 ps-4"><a href="#" class=" text-color fs-14">Mail</a></li>
+                    <li class="py-2 ps-4"><a href="chat.html" class="text-color fs-14">Chats</a></li>
+                    <li class="py-2 ps-4"><a href="card.html" class="text-color  fs-14">Card</a></li>
+                    <li class="py-2 ps-4"><a href="#" class=" text-color fs-14">Treeview</a></li>
+                    <li class="py-2 ps-4"><a href="contact.html" class=" text-color fs-14">Contacts</a></li>
+                    <li class="py-2 ps-4"><a href="calendar.html" class=" text-color fs-14">Default Calendar</a>
+                    </li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Full Calendar</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Notifications</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Range Slider</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Footer</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Crypto Currencies</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Colors</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Offcanvas</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Gallery</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Services</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Setting</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Switcher</a></li>
+                </ul>
+            </div>
+            <!-- application end -->
+            <!-- icon start -->
+            <div class="application-title ps-0 pb-3">
+                <div class=" ms-4 hover d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+                    data-bs-target="#icon-open" aria-expanded="false">
+                    <div class="app  d-flex align-items-center">
+                        <i class="bi bi-award me-3 fs-18"></i>
+                        <div class="collaps">
+                            <a href="#" class="text-color">Icons</a>
+                        </div>
+                    </div>
+                    <div class="me-3">
+                        <i class="las la-angle-right fs-11"></i>
+                    </div>
+                </div>
+                <ul class="mt-2  collapse t" id="icon-open">
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Fontawesome Icons</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Lonicons Icons</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Typicon Icons</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Feather Icons</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">MaterialDesign Icons</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Simpleline Icons</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Pe7 Icons</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Themify Icons</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Weather Icons</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Bootstrap Icons</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Flag Icons</a></li>
+                </ul>
+            </div>
+            <!-- icon end -->
+            <!-- map start -->
+            <div class="application-title ps-0 pb-3">
+                <div class=" ms-4 hover d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+                    data-bs-target="#map-open" aria-expanded="false">
+                    <div class="app  d-flex align-items-center">
+                        <i class="bi bi-geo-alt me-3 fs-18"></i>
+                        <div class="collaps">
+                            <a href="#" class="text-color">Maps</a>
+                        </div>
+                    </div>
+                    <div class="me-3">
+                        <i class="las la-angle-right fs-11"></i>
+                    </div>
+                </div>
+                <ul class="mt-2  collapse t" id="map-open">
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Mapel Maps</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Vector Maps</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Leaflet Maps</a></li>
+                </ul>
+            </div>
+            <!-- map end -->
+            <!-- landing start -->
+            <div class="application-title ps-0 pb-3">
+                <div class=" ms-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+                    data-bs-target="#map-open" aria-expanded="false">
+                    <div class="app hover d-flex align-items-center">
+                        <i class="bi bi-lightning-charge me-3 fs-18"></i>
+                        <div class="collaps">
+                            <a href="#" class="text-color">Landing Page</a>
+                        </div>
+                    </div>
+                    <div class="me-3">
+                        <span class="badge fs-11 rounded-1" style="background-color: #22923d;">New</span>
+                    </div>
+                </div>
+                <ul class="mt-2  collapse t" id="map-open">
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Mapel Maps</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Vector Maps</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Leaflet Maps</a></li>
+                </ul>
+            </div>
+            <!-- landing end -->
+            <!-- pages start -->
+            <div class="application-title ps-0 pb-3">
+                <p class="fs-11 ms-3 collaps aside-title-color">COMPONENTS</p>
+                <div class=" ms-4  hover d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+                    data-bs-target="#pages-open" aria-expanded="false">
+                    <div class="app  d-flex align-items-center">
+                        <i class="bi bi-compass me-3 fs-18"></i>
+                        <div class="collaps">
+                            <a href="#" class="text-color">Pages</a>
+                        </div>
+                    </div>
+                    <div class="me-3">
+                        <i class="las la-angle-right fs-11"></i>
+                    </div>
+                </div>
+                <ul class="mt-2 apps-cl collapse t" id="pages-open">
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">File Manager</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">E-Commerce</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Forms</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Table</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Chart</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Custom Pages</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Thumbnails</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Scrollspy</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Media Object</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Profit</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Invoice</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Prices</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">FAQs</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Breadcrumbs</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Terms</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">About</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Empty Page</a></li>
+                </ul>
+            </div>
+            <!-- pages end -->
+            <!-- Elements Start -->
+            <div class="application-title ps-0 pb-3">
+                <div class=" ms-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+                    data-bs-target="#elements-open" aria-expanded="false">
+                    <div class="app hover d-flex align-items-center">
+                        <i class="bi bi-layers me-3 fs-18"></i>
+                        <div class="collaps">
+                            <a href="#" class="text-color">Elements</a>
+                        </div>
+                    </div>
+                    <div class="me-3">
+                        <i class="las la-angle-right fs-11"></i>
+                    </div>
+                </div>
+                <ul class="mt-2 apps-cl collapse" id="elements-open">
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Avatars</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Alerts</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Buttons</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Badges</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Dropdown</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">List Group</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Navigation</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Images</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Pagination</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Popovers</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Progress</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Ribbon</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Spinners</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Typography</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Tooltip</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Toast</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">tags</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Panels</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Tabs</a></li>
+                </ul>
+            </div>
+            <!-- Elements end -->
+            <!-- Advance start -->
+            <div class="application-title ps-0 pb-3">
+                <div class=" ms-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+                    data-bs-target="#advance-open" aria-expanded="false">
+                    <div class="app hover d-flex align-items-center">
+                        <i class="bi bi-box-seam me-3 fs-18"></i>
+                        <div class="collaps">
+                            <a href="#" class="text-color">Advance UI</a>
+                        </div>
+                    </div>
+                    <div class="me-3">
+                        <i class="las la-angle-right fs-11"></i>
+                    </div>
+                </div>
+                <ul class="mt-2 apps-cl collapse" id="advance-open">
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Accordion</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Carousel</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Collapse</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">modals</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Timeline</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Dragabble-Card</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Sweet Alert</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Ratings</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Counters</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Search</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">User List</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Blog</a></li>
+                </ul>
+            </div>
+            <!-- Advance end  -->
+            <!-- other start -->
+            <div class="application-title ps-0 pb-3">
+                <p class="fs-11 ms-3 collaps aside-title-color">OTHER PAGES</p>
+                <div class=" ms-4  hover d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+                    data-bs-target="#other-open" aria-expanded="false">
+                    <div class="app  d-flex align-items-center">
+                        <i class="la la-book me-3 fs-18"></i>
+                        <div class="collaps">
+                            <a href="#" class="text-color">Sub Menus</a>
+                        </div>
+                    </div>
+                    <div class="me-3">
+                        <i class="las la-angle-right fs-11"></i>
+                    </div>
+                </div>
+                <ul class="mt-2 apps-cl collapse t" id="other-open">
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Sub Menu-1</a></li>
+                    <li class="py-2 ps-4"><a href="#" class="text-color fs-14">Sub Menu-2</a></li>
+                </ul>
+            </div>
+            <!-- other end -->
+            <!-- widget start -->
+            <div class="application-title ps-0 pb-3">
+                <div class=" ms-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+                    data-bs-target="#advance-open" aria-expanded="false">
+                    <div class="app hover d-flex align-items-center">
+                        <i class="bi bi-database me-3 fs-18"></i>
+                        <div class="collaps">
+                            <a href="#" class="text-color">Widgets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- widget end -->
+            <!-- utilities start -->
+            <div class="application-title ps-0 pb-3">
+                <div class=" ms-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+                    data-bs-target="#advance-open" aria-expanded="false">
+                    <div class="app hover d-flex align-items-center">
+                        <i class="bi bi-inboxes me-3 fs-18"></i>
+                        <div class="collaps">
+                            <a href="#" class="text-color">Utilities</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- utilities end -->
+        </div>
+    </aside>
+    <!-- aside end -->
+    <!-- main start -->
+    <main class="data">
+        <div class="container-fluid px-3">
+            <div class="data-header my-3 d-flex justify-content-between align-items-center flex-wrap">
+                <div class="data-title ps-2">
+                    <h2 class="text-color mt-3  ">Cards</h2>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html" class="text-color">Apps</a></li>
+                        <li class="breadcrumb-item active" aria-current="page" style="color: #8760fb;">Cards
+                        </li>
+                    </ol>
+                </div>
+                <div class="d-flex">
+                    <div class="me-2">
+                        <div class="btn btn-purple m-1 fs-14" data-bs-toggle="dropdown">
+                            <i class="bi bi-box-arrow-up-right me-1"></i>
+                            Export
+                            <i class="bi bi-caret-down-fill ms-1 "></i>
+                        </div>
+                        <ul class="dropdown-menu pdf">
+                            <li class="dropdown-item py-0">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-file-earmark-pdf icon-color  me-2"></i>
+                                    <p class="text-color  py-1 mb-0">Export as pdf</p>
+                                </div>
+                            </li>
+                            <li class="dropdown-item py-0">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-card-image text-grey  me-2"></i>
+                                    <p class="text-color  py-1 mb-0">Export as image</p>
+                                </div>
+                            </li>
+                            <li class="dropdown-item py-0">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-file-earmark-excel text-grey me-2"></i>
+                                    <p class="text-color  py-1 mb-0">Export as Excel</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn blue filter fs-14 text-white m-1">
+                            <i class="bi bi-download me-1 "></i>
+                            Download
+                        </div>
+                        <div class="btn btn-orange filter fs-14 m-1">
+                            <i class="bi bi-question-circle me-1"></i>
+                            Help
+                        </div>
+                        <div class="btn green filter fs-14 text-white m-1">
+                            <i class="bi bi-gear me-1"></i>
+                            Settings
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-theme mb-3">
+                <div class="row">
+                    <div class="col-12 col-xl-9">
+                        <div class="card border-0 shadow-theme">
+                            <div class="card-body">
+                                <div class="calendar">
+                                    <div class="month">
+                                        <i class="fas fa-angle-left prev"></i>
+                                        <div class="date">
+                                            <h1></h1>
+                                            <p></p>
+                                        </div>
+                                        <i class="fas fa-angle-right next"></i>
+                                    </div>
+                                    <div class="weekdays mt-3">
+                                        <div class="fx-14 py-3 fw-bold border-top border-end">S</div>
+                                        <div class="fx-14 py-3 fw-bold border-top border-end">M</div>
+                                        <div class="fx-14 py-3 fw-bold border-top border-end">T</div>
+                                        <div class="fx-14 py-3 fw-bold border-top border-end">W</div>
+                                        <div class="fx-14 py-3 fw-bold border-top border-end">T</div>
+                                        <div class="fx-14 py-3 fw-bold border-top border-end">F</div>
+                                        <div class="fx-14 py-3 fw-bold border-top ">S</div>
+                                    </div>
+                                    <div class="days"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 mt-3 mt-xl-0">
+                        <div class="card-title fs-14 mb-3 ms-2">
+                            My Schedules
+                        </div>
+                        <div class="card border-0 shadow-theme mb-3">
+                            <div class="card-body border-bottom">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="fs-14 primary-color m-0">Design Preview</p>
+                                    <i class="bi bi-three-dots-vertical fs-14 text-color"></i>
+                                </div>
+                                <span class="fs-14 text-grey">05-09-2021</span>
+                                <div class="d-flex mt-2">
+                                    <div class="btn btn-purple me-1 p-0 p-1 px-1 fs-14 me-3 rounded-1">
+                                        Urgent
+                                    </div>
+                                    <div class="btn btn-orange me-1 p-0 p-1 px-1 fs-14 rounded-1">
+                                        Free to Face
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body calendar pt-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex mt-3 align-items-center">
+                                        <div class="img-rate">
+                                            <img src="assets/images/5.jpg" alt="img">
+                                        </div>
+                                        <div class="bottom-content ms-3">
+                                            <h6 class="text-color mb-0 ">Mariane Galeon</h6>
+                                            <span class="text-grey fs-14">View Client Profile</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-th mb-3">
+                            <div class="card-body border-bottom">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="fs-14 primary-color m-0">New Project</p>
+                                    <i class="bi bi-three-dots-vertical fs-14 text-grey"></i>
+                                </div>
+                                <span class="fs-14 text-grey">14-10-2021</span>
+                                <div class="d-flex mt-2">
+                                    <div class="btn btn-purple me-1 p-0 p-1 px-1 fs-14 me-3 rounded-1">
+                                        Urgent
+                                    </div>
+                                    <div class="btn btn-orange me-1 p-0 p-1 px-1 fs-14 rounded-1">
+                                        Online Meeting
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body cal pt-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex mt-3 align-items-center">
+                                        <div class="img-rate">
+                                            <img src="assets/images/10.jpg" alt="img">
+                                        </div>
+                                        <div class="bottom-content ms-3">
+                                            <h6 class="text-color mb-0 ">Joyce Chua</h6>
+                                            <span class="text-grey fs-14">View Client Profile</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer start -->
+            <section class="footer bg-theme p-3 shadow-theme">
+                <p class="text-center mb-0 fs-14">
+                    Copyright © 2023 <a href="#" style="color: #8760fb;"> Dashlead.</a> Designed with <i
+                        class="bi bi-suit-heart-fill red"></i> by <a href="#" style="color: #8760fb;">Omprakash</a> All
+                    rights reserved
+                </p>
+            </section>
+            <!-- footer end -->
+            <!-- top button start -->
+            <div class="back-to-top">
+                <a href="#top">
+                    <i class="bi bi-arrow-up-square-fill fs-3" style="color: #8760fb;"></i>
+                </a>
+            </div>
+            <!-- top button end -->
+        </div>  
+    </main>
+    <!-- main end -->
+
+
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/Chart.bundle.min.js"></script>
+    <script src="assets/js/chart.flot.sampledata.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/ful-screen.js"></script>
+    <script src="assets/js/calendar.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.filter').click(function () {
+                $('.filter-dropdown').slideToggle('3000');
+                $('.filter-dropdown').toggleClass('mb-3');
+            });
+            $('.toggle-button').click(function () {
+                $('.collaps').toggleClass('dis-none');
+                $('.menu-logo').toggleClass('dis-none');
+                $('.menu-logo-2').toggleClass('dis-block');
+                $('.header-right').toggleClass('w-100x');
+                $('main').toggleClass('w-100x');
+                $('.menu-logo').toggleClass('w-60px');
+                $('.menu-logo-2').toggleClass('w-60px');
+                $('aside').toggleClass('w-60px');
+                $('.merge-in').toggleClass('merge-out');
+            });
+
+            $('.bi-moon').click(function(){
+                $('.bi-moon').toggleClass('bi-sun');
+            });
+
+            $(window).scroll(function () {
+                if (scrollY > 200) {
+                    $('.back-to-top').fadeIn(1000);
+                }
+                else {
+                    $('.back-to-top').fadeOut(1000);
+                }
+            });
+            $('.back-to-top').click(function () {
+                $('html').animate({ scrolltop: 0 });
+            });
+        });
+    </script>
+</body>
+
+</html>
